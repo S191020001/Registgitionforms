@@ -1,0 +1,90 @@
+<title>Registration Form</title>
+    <link rel="icon" type="image" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <p id="navbar">Student Registration Form</p>
+    </div>
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+    
+        <label for="psw">
+
+            <b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+            
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    <div class="flex-container">
+        <div class="left">
+            <form id="form">
+
+                <table id="info">
+                    <tr>
+                        <th>FullName</th>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td><input type="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <th>phone No.</th>
+                        <td><input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" id="mob"></td>
+                    </tr>
+                    <tr>
+                        <th> Addtional phone No.</th>
+                        <td><input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" id="mob"></td>
+                    </tr>
+                    <tr>
+                        <th>Date of Birth</th>
+                        <td><input type="date" id="date"></td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td><textarea rows="5" cols="25" id="address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>pin no</th>
+                        <td><input type="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            
+                        <td colspan = 2><center><input type="button" value="Submit" id="entry"></center></td>
+                        
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="right">
+            <center>
+		        <table id="show" border>
+			        <thead>
+				        <tr>
+					        <th>Name</th>
+                            <th>Email</th>
+                            <th>phone No.</th>
+                            <th> addtional phone No.</th>
+                            <th>Date of Birth</th>
+                            <th>Address</th>
+                            <th>pin no</th>
+				        </tr>
+			        </thead>
+		        </table>z
+            </center>
+	    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
